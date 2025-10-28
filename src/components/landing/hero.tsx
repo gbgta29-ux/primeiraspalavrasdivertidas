@@ -22,7 +22,7 @@ export function Hero() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
             <div className="space-y-4">
-              <h1 className="text-4xl font-black tracking-tighter text-primary sm:text-5xl md:text-6xl lg:text-7xl/none">
+              <h1 className="font-headline text-4xl font-black uppercase tracking-tighter text-primary sm:text-5xl md:text-6xl lg:text-7xl/none">
                 Seu filho ainda não fala?
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl lg:mx-0">
@@ -51,7 +51,7 @@ export function Hero() {
         </div>
 
         <div className="mt-12 lg:mt-16 text-center">
-            <h2 className="text-2xl font-bold tracking-tight text-primary sm:text-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-primary sm:text-3xl font-headline">
               O que você vai encontrar no livro digital:
             </h2>
             <div className="mt-8 max-w-2xl mx-auto">

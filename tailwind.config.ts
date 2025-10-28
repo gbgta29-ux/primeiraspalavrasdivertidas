@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Nunito', 'sans-serif'],
-        headline: ['Nunito', 'sans-serif'],
+        headline: ['Poppins', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
