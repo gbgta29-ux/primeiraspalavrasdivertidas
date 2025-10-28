@@ -58,15 +58,9 @@ export function Hero() {
           
           <div className="flex w-full max-w-md flex-col gap-4 sm:flex-row justify-center pt-8">
              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-extrabold text-lg py-7 shadow-lg transition-transform duration-200 hover:scale-105">
-              <Link href="#cta">
+              <Link href="https://pay.kirvano.com/7636b679-3abd-45cb-adf5-4557e81426f1">
                 <Heart className="mr-2 h-5 w-5" />
                 QUERO AJUDAR MEU FILHO
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg py-7">
-              <Link href="#">
-                  <PlayCircle className="mr-2 h-5 w-5"/>
-                  Ver uma amostra
               </Link>
             </Button>
           </div>

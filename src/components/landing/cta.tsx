@@ -19,7 +19,7 @@ export function Cta() {
         </div>
         <div className="w-full max-w-md space-y-6">
           <Button asChild size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-extrabold text-xl py-8 shadow-2xl transition-transform duration-200 hover:scale-105">
-            <Link href="#">
+            <Link href="https://pay.kirvano.com/7636b679-3abd-45cb-adf5-4557e81426f1">
               <Zap className="mr-2 h-6 w-6" />
               QUERO AJUDAR MEU FILHO AGORA
             </Link>
