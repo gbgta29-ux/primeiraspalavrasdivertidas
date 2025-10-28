@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Zap } from "lucide-react";
 
 const bonuses = [
   {
@@ -92,6 +94,16 @@ export function Offer() {
             })}
           </div>
         </div>
+
+        <div className="mt-12 flex justify-center">
+          <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-extrabold text-xl py-8 shadow-2xl transition-transform duration-200 hover:scale-105">
+            <Link href="https://pay.kirvano.com/7636b679-3abd-45cb-adf5-4557e81426f1">
+              <Zap className="mr-2 h-6 w-6" />
+              QUERO AJUDAR MEU FILHO AGORA
+            </Link>
+          </Button>
+        </div>
+
       </div>
     </section>
   );

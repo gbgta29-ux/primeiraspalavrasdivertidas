@@ -1,7 +1,6 @@
 import { Benefits } from "@/components/landing/benefits";
 import { Cta } from "@/components/landing/cta";
 import { Footer } from "@/components/landing/footer";
-import { Guarantee } from "@/components/landing/guarantee";
 import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
 import { Offer } from "@/components/landing/offer";
@@ -14,9 +13,8 @@ export default function LandingPage() {
       <main className="flex-1">
         <Hero />
         <Benefits />
-        <Offer />
         <Testimonials />
-        <Guarantee />
+        <Offer />
         <Cta />
       </main>
       <Footer />
