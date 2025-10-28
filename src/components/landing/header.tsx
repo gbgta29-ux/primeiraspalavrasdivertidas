@@ -8,7 +8,7 @@ export function Header() {
       <div className="container flex h-20 max-w-screen-2xl items-center justify-between px-4 md:px-6">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
           <Feather className="h-6 w-6 text-primary" />
-          <span className="text-xl font-bold text-primary tracking-wide">First Words Fun</span>
+          <span className="text-lg font-bold text-primary tracking-wide">Primeiras Palavras com Diversão</span>
         </Link>
         <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold shadow-sm transition-transform duration-300 hover:scale-105">
             <Link href="#cta">
