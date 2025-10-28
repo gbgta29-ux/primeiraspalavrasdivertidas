@@ -27,13 +27,13 @@
     {
       "id": "testimonial-patricia",
       "description": "Avatar for Patricia's testimonial",
-      "imageUrl": "https://images.unsplash.com/photo-1719087358997-12957d0859e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzYxNTU1MjQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://gvdtvgefzbxunjrtzrdw.supabase.co/storage/v1/object/public/media/agasmmg3xp_1761663742624.jpg",
       "imageHint": "woman smiling"
     },
     {
       "id": "testimonial-amanda",
       "description": "Avatar for Amanda's testimonial",
-      "imageUrl": "https://images.unsplash.com/photo-1542596594-649edbc13630?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMGhhcHB5fGVufDB8fHx8MTc2MTU5OTQ1Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://gvdtvgefzbxunjrtzrdw.supabase.co/storage/v1/object/public/media/wiqv1naafwr_1761663741360.jpg",
       "imageHint": "woman happy"
     }
   ]
