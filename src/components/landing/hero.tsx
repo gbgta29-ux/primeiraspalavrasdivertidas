@@ -1,8 +1,17 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { CheckCircle2 } from "lucide-react";
+import { Check, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+
+const features = [
+  "Mais de 50 atividades práticas e divertidas para estimular a fala",
+  "Guia de aplicação com passo a passo para cada brincadeira",
+  "Plano de 30 dias de estímulo, fácil de seguir",
+  "Cartões visuais com palavras e imagens simples",
+  "Frases prontas pra usar nas atividades",
+  "Explicações leves sobre atraso de fala, sem termos técnicos",
+];
 
 export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === "hero-mockup");
@@ -24,14 +33,7 @@ export function Hero() {
                 Livro digital com mais de 50 atividades para desenvolver a fala de forma natural, sem pressão e com carinho.
               </p>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-start justify-center">
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-extrabold text-lg py-8 shadow-2xl transition-transform duration-200 hover:scale-105">
-                <Link href="#cta">
-                  <CheckCircle2 className="mr-2 h-6 w-6" />
-                  QUERO AJUDAR MEU FILHO
-                </Link>
-              </Button>
-            </div>
+            
           </div>
           <div className="flex items-center justify-center">
             {heroImage && (
@@ -46,6 +48,30 @@ export function Hero() {
               />
             )}
           </div>
+        </div>
+
+        <div className="mt-12 lg:mt-16 text-center">
+            <h2 className="text-2xl font-bold tracking-tight text-primary sm:text-3xl">
+              O que você vai encontrar no livro digital:
+            </h2>
+            <div className="mt-8 max-w-2xl mx-auto">
+              <ul className="space-y-3 text-left">
+                {features.map((feature, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <Check className="h-5 w-5 flex-shrink-0 text-green-500 mt-1" />
+                    <span className="text-muted-foreground">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="mt-10 flex flex-col items-center justify-center">
+               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-extrabold text-lg py-8 shadow-2xl transition-transform duration-200 hover:scale-105">
+                <Link href="#cta">
+                  <CheckCircle2 className="mr-2 h-6 w-6" />
+                  QUERO AJUDAR MEU FILHO
+                </Link>
+              </Button>
+            </div>
         </div>
       </div>
     </section>
