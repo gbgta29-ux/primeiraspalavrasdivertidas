@@ -17,25 +17,25 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === "hero-mockup");
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full overflow-hidden py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
+          <div className="flex flex-col justify-center space-y-4 text-center lg:text-left animate-in fade-in slide-in-from-left-12 duration-1000">
             <div className="space-y-4">
               <h1 className="font-headline text-4xl font-black uppercase tracking-tighter text-primary sm:text-5xl md:text-6xl lg:text-7xl/none">
                 Seu filho ainda não fala?
               </h1>
-              <p className="max-w-[600px] text-muted-foreground md:text-xl lg:mx-0">
+              <p className="max-w-[600px] text-foreground md:text-xl lg:mx-0">
                 Descubra como estimular as primeiras palavrinhas com apenas 10
                 minutos por dia. Ideal para crianças de 1 a 3 anos.
               </p>
-               <p className="text-sm text-muted-foreground md:text-base">
+               <p className="text-sm text-foreground/80 md:text-base">
                 Livro digital com mais de 50 atividades para desenvolver a fala de forma natural, sem pressão e com carinho.
               </p>
             </div>
             
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center animate-in fade-in slide-in-from-right-12 duration-1000">
             {heroImage && (
               <Image
                 src={heroImage.imageUrl}
@@ -50,7 +50,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-12 lg:mt-16 text-center">
+        <div className="mt-12 lg:mt-16 text-center animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-300">
             <h2 className="text-2xl font-bold tracking-tight text-primary sm:text-3xl font-headline">
               O que você vai encontrar no livro digital:
             </h2>
@@ -59,7 +59,7 @@ export function Hero() {
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <Check className="h-5 w-5 flex-shrink-0 text-green-500 mt-1" />
-                    <span className="text-muted-foreground">{feature}</span>
+                    <span className="text-foreground/90">{feature}</span>
                   </li>
                 ))}
               </ul>
