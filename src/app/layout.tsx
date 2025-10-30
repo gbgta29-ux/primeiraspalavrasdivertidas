@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import FacebookPixel from '@/components/analytics/facebook-pixel';
 
 export const metadata: Metadata = {
   title: 'First Words Fun',
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         <Toaster />
+        <FacebookPixel />
       </body>
     </html>
   );
