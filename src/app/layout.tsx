@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import FacebookPixel from '@/components/analytics/facebook-pixel';
 
 export const metadata: Metadata = {
-  title: 'First Words Fun',
+  title: 'Primeiras Palavras Divertidas',
   description: 'Ajude seu filho a falar mais com atividades simples e divertidas.',
 };
 
@@ -16,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <link rel="icon" href="https://gvdtvgefzbxunjrtzrdw.supabase.co/storage/v1/object/public/media/atmlkzc8tds_1761865575638.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
